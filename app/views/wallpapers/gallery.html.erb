@@ -1,0 +1,29 @@
+<h1 id='gallery_title'>Gallery for all 21:9, 3440x1440 Wallpapers</h1>
+<div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @posts %>
+    </div>
+    <%= will_paginate @posts, :container => false %>
+  </div>
+
+
+
+<div id='gallery'>
+  <% @wallpapers.each do |image| %>
+     <% @picture= image.picture_id %>
+     <% @picture=@picture.to_s %>
+     <% @jpg='.jpg' %>
+     <% @picture_id=@picture+@jpg %>
+     <div class='gallery_pic_div'>
+      <%=link_to image_tag(@picture_id,class: 'gallery_picture'), wallpaper_path(image)%> 
+    </div>
+  <%end%>
+<div>
+
+<div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @posts %>
+    </div>
+    <%= will_paginate @posts, :container => false %>
+  </div>
+

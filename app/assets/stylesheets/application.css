@@ -1,0 +1,285 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+html,body { 
+  height:100%;
+  width: 100%;
+  background-color: black;
+}
+#wrapper{
+	background: #000;
+	height: 120%;
+  width: 100%;
+  margin-top: 5.2em;
+}
+
+#show_wallpaper{
+	height: 75%;
+	width: 75%
+}
+
+
+/************************************Header***************************************/
+#header_title{
+
+  color: white;
+  font-family: 'Audiowide', cursive;
+  font-size: 45px;
+}
+
+#header_title:hover{
+  color: black;
+}
+
+
+#header{
+
+  position:fixed;
+  width: 100%;
+  z-index: 99999999;
+  margin-top: -5em;
+  background: rgba(0, 26, 102, 0.6);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0, 102, 245, 0.6);
+
+}
+
+li {
+    float: left;
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+}
+
+ .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #80b3ff;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*
+#header_title{
+  display: inline-block;
+  width: 30%;
+  text-decoration: none;
+  color: white;
+  font-family: 'Audiowide', cursive;
+  font-size: 40px;
+}
+
+#header_title:hover{
+  color: black;
+}
+
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-top: -3.5em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #80b3ff;color: white;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #80b3ff;
+        color: white;
+
+}
+
+
+/************************************Gallery***************************************/
+#gallery_title{
+	text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin:.7em auto;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 36px;
+}
+
+.apple_pagination {
+  background: #000;
+  border: 1px solid #0066ff;
+  text-align: center;
+  padding: 1em;
+  cursor: default;
+  color: #fff; }
+  .apple_pagination a, .apple_pagination span {
+    padding: 0.2em 0.3em; }
+  .apple_pagination .disabled {
+    color: #aaaaaa; }
+  .apple_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background-color: #0066ff;
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.5;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+
+  .apple_pagination a {
+    text-decoration: none;
+    color: black; }
+    .apple_pagination a:hover, .apple_pagination a:focus {
+      text-decoration: underline; }
+
+      .apple_pagination a {
+    text-decoration: none;
+    color: #fff; }
+
+#gallery{
+	text-align: center;
+}
+
+.gallery_picture{
+	height: 33%;
+	width: 33%;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+            z-index: 1;
+
+
+}
+
+.gallery_picture:hover{
+	filter: brightness(150%);
+	-webkit-filter: brightness(100%);
+	-moz-filter: brightness(150%);
+	-o-filter: brightness(100%);
+	-ms-filter: brightness(100%);
+
+
+}
+
+.gallery_pic_div{
+	display: inline;
+}
+
+
+/************************************Gallery***************************************/
+
+/************************************Show***************************************/
+
+#show_wrapper{
+	background-color:#000;
+	height:100%;
+	text-align: center;
+	color: #d9d9d9;
+}
+
+#show_title{
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5em;
+}
+
+#show_cat{
+	display: inline;
+	margin-right: 3em;
+  font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+#show_color{
+	display: inline;
+  font-size: 1.5em;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/************************************Show***************************************/
+
+
+
+

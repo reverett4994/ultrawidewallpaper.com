@@ -1,0 +1,25 @@
+
+<div id=show_wrapper>
+	<p id="notice"><%= notice %></p>
+	<p id='show_title'>
+	  <strong><%= @wallpaper.title %></strong>
+	</p>
+	
+
+	<p>
+	  <%=link_to image_tag(@picture_id,id:'show_wallpaper'),fullsize_path%>
+	</p>
+<p id='show_cat'>
+	  <strong>Category:</strong>
+	  <%= @wallpaper.cat %>
+</p>
+
+<p id='show_color'>
+ <strong>Color: </strong>
+ <%= @wallpaper.color %>
+</p>
+
+         <td><%= link_to 'Destroy', @wallpaper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+</div>
+

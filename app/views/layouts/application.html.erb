@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ultrawide Wallpapers</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Oswald" rel="stylesheet">   <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id='header'>
+
+    <ul>
+  <li id='li_title'> <%= link_to 'UltrawideWallpaper.com',  gallery_path, id:'header_title' %></li>
+  
+<li class="dropdown">
+    <a href="#" class="dropbtn">Colors</a>
+    <div class="dropdown-content">
+    <%= link_to 'Black',  color_sort_path(:color=>'Black')  %>
+    <%= link_to 'Blue',  color_sort_path(:color=>'Blue')  %>
+    <%= link_to 'Grey',  color_sort_path(:color=>'Grey')  %>
+    <%= link_to 'Green',  color_sort_path(:color=>'Green')  %>
+    <%= link_to 'Orange',  color_sort_path(:color=>'Orange')  %>    
+    <%= link_to 'White',  color_sort_path(:color=>'White')  %>
+    <%= link_to 'Yellow',  color_sort_path(:color=>'Yellow')  %>
+
+    </div>
+  </li>  
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Category</a>
+    <div class="dropdown-content">
+     <%= link_to 'Architecture',  category_sort_path(:cat=>'Architecture')  %>
+    <%= link_to 'Artistic',  category_sort_path(:cat=>'Artistic')  %>
+    <%= link_to 'Cars',  category_sort_path(:cat=>'Cars')  %>
+    <%= link_to 'Games',  category_sort_path(:cat=>'Games')  %>
+    <%= link_to 'Nature',  category_sort_path(:cat=>'Nature')  %>
+    <%= link_to 'People',  category_sort_path(:cat=>'People')  %>
+    <%= link_to 'Space',  category_sort_path(:cat=>'Space')  %>
+
+    </div>
+  </li>
+</ul>
+
+
+  </div>
+</div>
+	</div>
+	<div id='wrapper'>
+		<%= yield %>
+	</div>
+</body>
+</html>

@@ -4,7 +4,7 @@ class WallpapersController < ApplicationController
   # GET /wallpapers
   # GET /wallpapers.json
   def index
-    @wallpapers = Wallpaper.order('cat ASC')
+    @wallpapers = Wallpaper.order('RAND()')
   end
 
   # GET /wallpapers/1
@@ -44,7 +44,8 @@ class WallpapersController < ApplicationController
   
 
   def gallery
-    @wallpapers = Wallpaper.paginate(:page=>params[:page])
+    #@wallpapers = Wallpaper.order('RAND()')
+    @wallpapers = Wallpaper.all.paginate(:page=>params[:page])
   end
 
   def fullsize
@@ -108,4 +109,4 @@ class WallpapersController < ApplicationController
 end
 
 
-Wallpaper.create(:title=>"Old Bridge",:cat=>"Architecture",:color=>"",:picture_id=>370)
+#Wallpaper.create(:title=>"Chrome Car",:cat=>"Cars",:color=>"White",:picture_id=>462)

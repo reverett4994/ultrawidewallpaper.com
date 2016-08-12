@@ -10,16 +10,20 @@
 	<div id='header'>
 
     <ul>
-  <li id='li_title'> <%= link_to 'UltrawideWallpaper.com',  gallery_path, id:'header_title' %></li>
+  <li id='li_title'> <%= link_to 'UltrawideWallpaper.com', root_path, id:'header_title' %></li>
   
 <li class="dropdown">
     <a href="#" class="dropbtn">Colors</a>
     <div class="dropdown-content">
-    <%= link_to 'Black',  color_sort_path(:color=>'Black')  %>
-    <%= link_to 'Blue',  color_sort_path(:color=>'Blue')  %>
-    <%= link_to 'Grey',  color_sort_path(:color=>'Grey')  %>
-    <%= link_to 'Green',  color_sort_path(:color=>'Green')  %>
-    <%= link_to 'Orange',  color_sort_path(:color=>'Orange')  %>    
+     <%= link_to 'Black',  color_sort_path(:color=>'Black')  %>
+     <%= link_to 'Blue',  color_sort_path(:color=>'Blue')  %>
+     <%= link_to 'Brown',  color_sort_path(:color=>'Brown')  %>
+     <%= link_to 'Grey',  color_sort_path(:color=>'Grey')  %>
+     <%= link_to 'Green',  color_sort_path(:color=>'Green')  %>
+     <%= link_to 'Orange',  color_sort_path(:color=>'Orange')  %> 
+     <%= link_to 'Purple',  color_sort_path(:color=>'Purple')  %> 
+     <%= link_to 'Red',  color_sort_path(:color=>'Red')  %>
+   
     <%= link_to 'White',  color_sort_path(:color=>'White')  %>
     <%= link_to 'Yellow',  color_sort_path(:color=>'Yellow')  %>
 

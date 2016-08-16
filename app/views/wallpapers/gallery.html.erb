@@ -15,7 +15,7 @@
      <% @jpg='.jpg' %>
      <% @picture_id=@picture+@jpg %>
      <div class='gallery_pic_div'>
-      <%=link_to image_tag(@picture_id,class: 'gallery_picture'), wallpaper_path(image)%> 
+      <%=link_to image_tag("https://s3.amazonaws.com/ultrawidewallpapers/"+@picture_id,class: 'gallery_picture'), wallpaper_path(image)%> 
     </div>
   <%end%>
 <div>

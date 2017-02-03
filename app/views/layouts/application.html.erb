@@ -5,13 +5,14 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <link href="https://fonts.googleapis.com/css?family=Audiowide|Oswald" rel="stylesheet">   <%= csrf_meta_tags %>
+<%= render partial: "layouts/g_analytics" %>
 </head>
 <body>
 	<div id='header'>
 
     <ul>
   <li id='li_title'> <%= link_to 'UltrawideWallpaper.com', root_path, id:'header_title' %></li>
-  
+
 <li class="dropdown">
     <a href="#" class="dropbtn">Colors</a>
     <div class="dropdown-content">
@@ -20,15 +21,15 @@
      <%= link_to 'Brown',  color_sort_path(:color=>'Brown')  %>
      <%= link_to 'Grey',  color_sort_path(:color=>'Grey')  %>
      <%= link_to 'Green',  color_sort_path(:color=>'Green')  %>
-     <%= link_to 'Orange',  color_sort_path(:color=>'Orange')  %> 
-     <%= link_to 'Purple',  color_sort_path(:color=>'Purple')  %> 
+     <%= link_to 'Orange',  color_sort_path(:color=>'Orange')  %>
+     <%= link_to 'Purple',  color_sort_path(:color=>'Purple')  %>
      <%= link_to 'Red',  color_sort_path(:color=>'Red')  %>
-   
+
     <%= link_to 'White',  color_sort_path(:color=>'White')  %>
     <%= link_to 'Yellow',  color_sort_path(:color=>'Yellow')  %>
 
     </div>
-  </li>  
+  </li>
   <li class="dropdown">
     <a href="#" class="dropbtn">Category</a>
     <div class="dropdown-content">
@@ -51,5 +52,6 @@
 	<div id='wrapper'>
 		<%= yield %>
 	</div>
+  <%= render partial: "layouts/ganalytics_pageview" %>
 </body>
 </html>

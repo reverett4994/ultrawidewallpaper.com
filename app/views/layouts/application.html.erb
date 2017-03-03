@@ -5,7 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 <link href="https://fonts.googleapis.com/css?family=Audiowide|Oswald" rel="stylesheet">   <%= csrf_meta_tags %>
-<%= render partial: "layouts/g_analytics" %>
 </head>
 <body>
 	<div id='header'>
@@ -52,6 +51,5 @@
 	<div id='wrapper'>
 		<%= yield %>
 	</div>
-  <%= render partial: "layouts/ganalytics_pageview" %>
 </body>
 </html>
